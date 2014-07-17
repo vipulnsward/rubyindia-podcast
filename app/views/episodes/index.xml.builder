@@ -14,7 +14,7 @@ xml.rss :version => '2.0', 'xmlns:dc' => 'http://purl.org/dc/elements/1.1/', 'xm
     xml.tag! 'itunes:subtitle', @show.title
     xml.tag! 'itunes:author', 'rubyindia'
     xml.tag! 'itunes:summary', strip_tags(@show.description)
-    xml.tag! 'itunes:image', href: "http://rubyindia-podcast.s3.amazonaws.com#{@show.slug}-1400.png"
+    xml.tag! 'itunes:image', href: "http://rubyindia-podcast.s3.amazonaws.com/#{@show.slug}-1400.png"
     xml.tag! 'itunes:keywords', @show.keywords
     xml.tag! 'itunes:explicit', 'no'
 
