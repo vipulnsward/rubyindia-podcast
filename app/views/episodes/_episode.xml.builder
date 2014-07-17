@@ -9,7 +9,7 @@ xml.item do
   xml.pubDate episode.rss_pub_date
   xml.author 'rubyindia'
   xml.description episode.description
-  xml.enclosure url: show_episode_url(episode.show, episode, format: :mp3), length: episode.file_size, type: 'audio/mpeg'
+  xml.enclosure episode.archive
   xml.duration episode.duration
   xml.tag! 'content:encoded', "<p>#{episode.description}</p>" + BlueCloth.new(episode.notes).to_html
   xml.tag! 'itunes:author', 'rubyindia'
