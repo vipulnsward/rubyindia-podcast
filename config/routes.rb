@@ -5,7 +5,7 @@ Podcasts::Application.routes.draw do
 
   root to: 'shows#index'
 
-  constraints show_id: /giantrobots|buildphase/ do
+  constraints show_id: /rubyindia/ do
     get '/:show_id' => 'episodes#index', as: :show_episodes
     get '/:show_id/:id' => 'episodes#show', as: :show_episode
   end

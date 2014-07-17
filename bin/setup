@@ -26,8 +26,8 @@ else
 fi
 
 # Set up deploys
-git remote add staging git@heroku.com:thoughtbot-podcasts-staging.git
-heroku join --app thoughtbot-podcasts-staging
+# git remote add staging git@heroku.com:thoughtbot-podcasts-staging.git
+# heroku join --app thoughtbot-podcasts-staging
 
-git remote add production git@heroku.com:thoughtbot-podcasts-production.git
-heroku join --app thoughtbot-podcasts-production
+# git remote add production git@heroku.com:thoughtbot-podcasts-production.git
+# heroku join --app thoughtbot-podcasts-production

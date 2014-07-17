@@ -6,9 +6,9 @@ en:
 
   layouts:
     app_name:
-      'thoughtbot podcasts'
+      'Ruby India Podcast'
     description:
-      'Weekly podcasts from thoughtbot on design, Ruby on Rails, iOS, running
+      'Podcasts from RubyIndia, speaking with with people on Ruby, Ruby on Rails, running
       software companies, and maintaining work/life balance.'
 
   time:
