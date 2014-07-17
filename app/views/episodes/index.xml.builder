@@ -12,14 +12,14 @@ xml.rss :version => '2.0', 'xmlns:dc' => 'http://purl.org/dc/elements/1.1/', 'xm
     xml.language 'en-us'
     xml.tag! 'itunes:new-feed-url', show_episodes_url(@show, format: :xml)
     xml.tag! 'itunes:subtitle', @show.title
-    xml.tag! 'itunes:author', 'rubyindia'
+    xml.tag! 'itunes:author', 'vipulnsward'
     xml.tag! 'itunes:summary', strip_tags(@show.description)
     xml.tag! 'itunes:image', href: "http://rubyindia-podcast.s3.amazonaws.com/#{@show.slug}-1400.png"
     xml.tag! 'itunes:keywords', @show.keywords
     xml.tag! 'itunes:explicit', 'no'
 
     xml.tag! 'itunes:owner' do
-      xml.tag! 'itunes:name', 'rubyindia'
+      xml.tag! 'itunes:name', 'vipulnsward'
       xml.tag! 'itunes:email', @show.email
     end
 

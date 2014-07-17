@@ -7,12 +7,12 @@ xml.item do
     xml.guid episode.old_url
   end
   xml.pubDate episode.rss_pub_date
-  xml.author 'rubyindia'
+  xml.author 'vipulnsward'
   xml.description episode.description
   xml.enclosure url: episode.archive.html_safe, length: (episode.file_size || 10), type: 'audio/mpeg'
   xml.duration episode.duration
   xml.tag! 'content:encoded', "<p>#{episode.description}</p>" + BlueCloth.new(episode.notes).to_html
-  xml.tag! 'itunes:author', 'rubyindia'
+  xml.tag! 'itunes:author', 'vipulnsward'
   xml.tag! 'itunes:subtitle', episode.description
   xml.tag! 'itunes:summary', episode.description
   xml.tag! 'itunes:keywords', episode.show.keywords
