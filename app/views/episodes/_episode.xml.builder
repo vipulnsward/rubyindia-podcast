@@ -16,5 +16,5 @@ xml.item do
   xml.tag! 'itunes:subtitle', episode.description
   xml.tag! 'itunes:summary', episode.description
   xml.tag! 'itunes:keywords', episode.show.keywords
-  xml.tag! 'itunes:image', href: "http://gr-podcast.s3.amazonaws.com/#{episode.show.slug}-1400.jpg"
+  xml.tag! 'itunes:image', href: "http://rubyindia-podcast.s3.amazonaws.com/#{episode.show.slug}-1400.png"
 end
