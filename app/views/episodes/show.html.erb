@@ -29,10 +29,10 @@
     <div class="listen">
       <audio preload="none" controls="controls">
         <%= tag :source,
-          src: show_episode_path(@episode.show, @episode, format: :mp3),
+          src: @episode.archive,
           type: 'audio/mpeg' %>
       </audio>
-      <%= link_to show_episode_path(@episode.show, @episode, format: :mp3) do %>
+      <%= link_to @episode.archive do %>
         Direct Download
       <% end %>
       (<%= number_to_human_size @episode.file_size, precision: 2 %>)
@@ -47,7 +47,7 @@
       <h3>To have your questions answered on the air</h3>
       <p>
         Email your questions to <%= mail_to @episode.show.email %> or Tweet to
-        us <a href="http://twitter.com/thoughtbot">@thoughtbot</a>.
+        us <a href="http://twitter.com/RubyIndiaOrg">@RubyIndiaOrg</a>.
       </p>
     </section>
   </article>
