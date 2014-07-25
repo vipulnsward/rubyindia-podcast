@@ -17,7 +17,7 @@ Credits
 
 ![BigBinary](http://bigbinary.com/assets/common/logo.png)
 
-The hours I and [Prathamesh](https://github.com/prathamesh-sonpatki) work on [RubyIndia](http://www.rubyindia.org) are graciously funded by [BigBinary ](http://bigbinary.com) . All thanks to it!
+The hours I and [Prathamesh](https://github.com/prathamesh-sonpatki) work on [RubyIndia](http://www.rubyindia.org) are graciously funded by [BigBinary](http://bigbinary.com). All thanks to it!
 
 The application is based on [thoughtbot podcasts](https://github.com/thoughtbot/podcasts).
 
