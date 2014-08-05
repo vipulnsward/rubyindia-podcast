@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/vipulnsward/rubyindia-podcast.png?label=ready&title=Ready)](https://waffle.io/vipulnsward/rubyindia-podcast)
 RubyIndia Podcasts
 ===================
 
