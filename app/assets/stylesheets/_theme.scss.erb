@@ -48,12 +48,12 @@ header {
     }
 
     h2 a {
-      color: #333;
+      color:#ad141e;
       font-weight: 700;
       text-decoration: none;
-
+      font-family: 'Lato', sans-serif;
       &:hover {
-        color: $red;
+        color: #333;
       }
     }
 
@@ -64,7 +64,7 @@ header {
     }
 
     h3 a {
-      color: #777;
+      color: #333;
       font-weight: 400;
       text-decoration: none;
 
@@ -74,7 +74,10 @@ header {
     }
   }
 }
-
+section#posts{
+  padding-top: 2rem;
+  border-top:2px solid #ccc;
+}
 .post {
   @include fill-parent();
   margin: 0;
@@ -84,8 +87,8 @@ header {
     padding-bottom: 1rem;
 
     h1.title, h1.title a {
-      font-size: 1rem;
-      line-height: 1.7rem;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
       margin-bottom: 0;
     }
   }
@@ -120,13 +123,13 @@ header {
     text-transform: none;
 
     a {
-      color: #000;
-      font: 700 2rem/1.3em $sans-serif;
+      color: #ad141e;
+      font: 700 2rem/1.3em 'Lato', sans-serif;
       text-decoration: none;
     }
 
     a:hover {
-      color: $red;
+      color: #333;
     }
   }
 
@@ -334,6 +337,8 @@ header {
 
   .post-date {
     margin: 0 auto 0 auto;
+    font-style: italic;
+    font-size: 14px;
   }
 
   .author {
