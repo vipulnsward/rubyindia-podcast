@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.2.2'
 
 gem 'airbrake'
 gem 'aws-sdk', '1.6.2' # Bug https://github.com/thoughtbot/paperclip/issues/751
