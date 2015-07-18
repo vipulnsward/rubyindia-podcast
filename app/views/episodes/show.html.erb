@@ -1,21 +1,22 @@
 <% content_for :page_title, @episode.title %>
 <% content_for :meta_description, @episode.description %>
-
+<% content_for :body_class, "episodes" %>
 <% content_for :header do %>
   <%= render @episode.show %>
 <% end %>
 
 <section id='posts'>
   <article class='post text'>
+    <p class='episode-number'>
+      <%= link_to [@episode.show, @episode] do %>
+        Episode #<%= @episode.number %>
+      <% end %>
+    </p>
     <h1 class='title'>
       <%= link_to @episode.title, [@episode.show, @episode] %>
     </h1>
     <aside class='meta-info'>
-      <p class='episode-number'>
-        <%= link_to [@episode.show, @episode] do %>
-          Episode #<%= @episode.number %>
-        <% end %>
-      </p>
+
       <p class='post-date'>
         <%= l @episode.published_on %>
       </p>
@@ -52,3 +53,26 @@
     </section>
   </article>
 </section>
+    <footer>
+      <section id="footer-container">
+        <section class="etc">
+          <p>
+            Brought to you by the folks at <a href="http://www.rubyindia.org">Ruby India</a> and  <a href="http://www.bigbinary.com">BigBinary.</a>
+          </p>
+          <nav>
+            <ul>
+              <li>
+                <a href='http://twitter.com/RubyIndiaOrg' id='twitter'>
+                  twitter
+                </a>
+              </li>
+              <li>
+                <a href='http://www.rubyindia.org/' id='contact'>
+                  newsletter
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </footer>
