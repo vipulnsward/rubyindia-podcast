@@ -1,75 +1,122 @@
-@import 'bourbon/bourbon';
 @import 'reset';
-@import 'variables';
-@import 'mixins';
-@import 'code-highlight';
-@import 'forms';
-@import 'theme';
-@import 'figures';
+@import 'header';
 
-@media only screen and (min-width: 760px) {
-  @import '760-up';
+body{
+  font-family: 'Roboto';
+  line-height: 30px;
+  color:#333;
 }
 
-@media only screen and (min-width: 1025px) {
-  @import '1025-up';
+a{
+  text-decoration: none;
+  color: #348eda;
+}
+section#container{
+  width: 80%;
+  margin: 1em auto;
+}
+article.mini-post{
+  margin: 5%;
 }
 
-.post .episode-number {
-  margin: 0;
+footer{
+  clear: both;
+  text-align: center;
+  margin-top: 5em;
+}
+.post-date{
+  font-size:14px;
+}
+body.episodes{
 
-  a {
-    font-weight: 800;
+  background: none;
 
-    &:visited {
-      color: #999;
-    }
+  .description{
+    display: none;
   }
-}
 
-.listen audio {
+}
+.short-description{
+  color:#777;
+}
+audio{
+  width:100%;
   display: block;
-  margin-bottom: 1em;
-  width: 100%;
+  margin: 20px 0;
 }
+.meta-info{
+  color: #999;
+}
+@media all and(min-width: 800px){
+  body{
+    background: asset-url('background.png') no-repeat;
+    background-size:100%;
+    background-position: 0 -150px;
+  }
+  article.mini-post{
+    width: 25%;
+    float: left;
+    margin: 3%;
+    padding-left: 2%;
+    height: 320px;
+    border-left:2px solid #ddd;
 
-header hgroup {
-  h2 {
-    margin-bottom: .2rem;
+    aside{
+      border-bottom:2px solid #ddd;
+      margin-bottom: 10px;
+    }
+  }
+  article.mini-post:nth-child(3n+4){
+    clear: left;
+  }
+  header h2{
+    font-size: 3.5em;
+  }
+  header .menu{
+    display: table;
+    margin:3em auto auto;
   }
 
-  h3 {
-    font-style: normal;
-    line-height: 1.6em;
-    margin-bottom: .5rem;
+  .description{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 2em 0;
+    font-size: 20px;
+    line-height: 2.5;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+  }
 
-    a {
-      border-bottom: 2px solid #999;
-      margin-right: .5rem;
+  article:not(.mini-post){
+    width: 75%;
+    margin: auto;
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    padding: 1em 2.5em;
 
-      &:hover {
-        text-decoration: none;
-      }
+     h1.title{
+      font-size: 2em;
+      margin: 0 0 10px;
+    }
+  }
+  .menu{
+     li{
+      float: left;
+      margin-right: 8px;
+
+     }
+     a{
+      color:#fff;
+      background: rgba(0,0,0,.15);
+      padding: 8px 40px;
     }
   }
 }
-
-body.devise-sessions {
-  form {
-    display: none;
-  }
-
-  h2 {
-    display: none;
-  }
-}
-
-body.guest-info {
-  .title {
-    margin-top: 2em;
-  }
-
-  .post {
-    padding-left: 0;
+@media all and(max-width: 800px){
+  article.mini-post{
+    margin: 0%;
+    padding: 10px inherit;
+    border-bottom: 2px solid #ccc;
   }
 }

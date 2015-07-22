@@ -8,52 +8,18 @@
     <%= yield :meta %>
     <title><%= yield(:page_title).presence || t('layouts.app_name') %></title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script>
-      // Remove render-blocking JavaScripts
-      // https://developers.google.com/speed/docs/insights/BlockingJS
-      (function() {
-        function loadStylesheet(url) {
-          var stylesheet = document.createElement('link');
-          stylesheet.type = 'text/css';
-          stylesheet.rel = 'stylesheet';
-          stylesheet.href = url;
-          document.getElementsByTagName('head')[0].appendChild(stylesheet);
-        }
-
-        loadStylesheet('//cloud.typography.com/6716232/768182/css/fonts.css');
-        loadStylesheet('<%= asset_path 'application', type: :stylesheet %>');
-      })();
-    </script>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:600", :media => "all" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Roboto", :media => "all" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+     
   </head>
   <body class="<%= yield :body_class %>">
+    <%= yield(:header) %>
     <section id="container">
-      <%= yield(:header) %>
+      
       <%= yield %>
     </section>
 
-    <footer>
-      <section id="footer-container">
-        <section class="etc">
-          <p>
-            Brought to you by the folks at <a href="http://www.rubyindia.org">Ruby India</a> and  <a href="http://www.bigbinary.com">BigBinary.</a>
-          </p>
-          <nav>
-            <ul>
-              <li>
-                <a href='http://twitter.com/RubyIndiaOrg' id='twitter'>
-                  twitter
-                </a>
-              </li>
-              <li>
-                <a href='http://www.rubyindia.org/' id='contact'>
-                  newsletter
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </section>
-    </footer>
 
     <%= render 'analytics' %>
   </body>

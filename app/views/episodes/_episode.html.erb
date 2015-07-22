@@ -1,18 +1,19 @@
 <article class='post text mini-post'>
-  <h1 class='title'>
-    <%= link_to episode.title, [episode.show, episode] %>
-  </h1>
-
   <aside class='meta-info mini'>
-    <p class='episode-number'>
+    <h3 class='episode-number'>
       <%= link_to [episode.show, episode] do %>
         Episode #<%= episode.number %>
       <% end %>
-    </p>
+    </h3>
     <p class='post-date'>
       <%= l episode.published_on %>
     </p>
   </aside>
 
-  <p><%= episode.description %></p>
+  <h1 class='title'>
+    <%= link_to episode.title, [episode.show, episode] %>
+  </h1>
+
+
+  <p class="short-description"><%= episode.description %></p>
 </article>

@@ -1,0 +1,45 @@
+h1,h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+}
+
+header{
+  background: rgba(230,59,52,.85);
+  padding: 4em 0;
+  color: #fff;
+  overflow:hidden;
+
+  h2{
+    font-size: 2.5em;
+    text-align: center;
+   }
+
+  .title a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  .menu{
+    display: table;
+    margin:2em auto auto;
+
+     li{
+      float: left;
+      margin-right: 1px;
+
+     }
+     a{
+      color:#fff;
+      background: rgba(0,0,0,.15);
+      padding: 8px 20px;
+    }
+  }
+}
+
+.description{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 1em 0;
+ }
