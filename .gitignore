@@ -10,7 +10,6 @@ coverage/*
 db/*.sqlite3
 log/*
 public/system
-config/database.yml
 rerun.txt
 tags
 tmp/*
